@@ -1,15 +1,17 @@
-import react from "react"
-import {BrowerRouter,Router,Route} from "react-dom-client"
-import Tasks from "./components/Tasks"
-import EditTask from "./components/EditTask"
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Tasks from "./components/Tasks";
+import EditTask from "./components/EditTask";
 
-function App(){
-  <BrowerRouter>
-    <Router>
-      <Route path="/" element={<Tasks />} />
-      <Route path="/edit-task/:id" element={<EditTask/>} />
-    </Router>
-  </BrowerRouter>
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Tasks />} />
+        <Route path="/edit-task/:id" element={<EditTask />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

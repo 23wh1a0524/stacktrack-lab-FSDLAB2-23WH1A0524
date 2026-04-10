@@ -1,5 +1,5 @@
 import react from "react"
-import rectDom from "react-dom client"
+import reactDom from "react-dom/client"
 import App from "./App"
 
 const root=reactDom.createRoot(document.getElementById("root"))
