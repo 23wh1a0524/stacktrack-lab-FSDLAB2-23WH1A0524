@@ -11,3 +11,5 @@ function App(){
     </Router>
   </BrowerRouter>
 }
+
+export default App
