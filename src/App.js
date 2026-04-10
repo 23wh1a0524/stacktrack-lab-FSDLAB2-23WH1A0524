@@ -1,14 +1,13 @@
-import React from 'react';
-import Home from './pages/Home';
+import react from "react"
+import {BrowerRouter,Router,Routes} from "react-dom-client"
+import Tasks from "./components/Tasks"
+import TasksDetails from "./components/TasksDetails"
 
-function App() {
-  return (
-    <div>
-      <Home />
-
-      {/* TODO: Replace this placeholder with Routes */}
-    </div>
-  );
+function App(){
+  <BrowerRouter>
+    <Router>
+      <Route path="/" element={<Tasks />} />
+      <Route path="/task/:id" element={<TasksDetails/>} />
+    </Router>
+  </BrowerRouter>
 }
-
-export default App;
